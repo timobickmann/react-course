@@ -1,0 +1,1 @@
+export type AccessGroup = "member" | "admin"

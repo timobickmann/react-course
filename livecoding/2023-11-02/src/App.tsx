@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import states from "./data/states.json";
+import image from "./images/image.jpeg";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const title = "Vite React Site";
+  const userType = "admin";
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 className="highlighted">{title}</h1>
+      <p>Hello, world!</p>
+
+      {userType === "admin" ? <p>Admin</p> : <p>Not admin</p>}
+
+      <h2>German states</h2>
+      {states.map((state, index) => (
+        <p key={index}>{state}</p>
+      ))}
+
+      <h2>Image</h2>
+      {/* <img src="images/image.jpeg" /> */}
+      <img src={image} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
