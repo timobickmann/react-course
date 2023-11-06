@@ -1,0 +1,93 @@
+import { IPlayerResult } from "./interfaces";
+
+export const countries = [
+  "Albania",
+  "Andorra",
+  "Austria",
+  "Belarus",
+  "Belgium",
+  "Bosnia and Herzegovina",
+  "Bulgaria",
+  "Croatia",
+  "Cyprus",
+  "Czech Republic",
+  "Denmark",
+  "Estonia",
+  "Finland",
+  "France",
+  "Germany",
+  "Greece",
+  "Hungary",
+  "Iceland",
+  "Ireland",
+  "Italy",
+  "Kosovo",
+  "Latvia",
+  "Liechtenstein",
+  "Lithuania",
+  "Luxembourg",
+  "Malta",
+  "Moldova",
+  "Monaco",
+  "Montenegro",
+  "Netherlands",
+  "North Macedonia",
+  "Norway",
+  "Poland",
+  "Portugal",
+  "Romania",
+  "Russia",
+  "San Marino",
+  "Serbia",
+  "Slovakia",
+  "Slovenia",
+  "Spain",
+  "Sweden",
+  "Switzerland",
+  "Ukraine",
+  "United Kingdom",
+  "Vatican City",
+];
+
+export const playerResults: IPlayerResult[] = [
+  {
+    name: "John",
+    score: "10",
+  },
+  {
+    name: "Jane",
+    score: "5",
+  },
+  {
+    name: "Joe",
+    score: "7",
+  },
+  {
+    name: "Jill",
+    score: "3",
+  },
+  {
+    name: "Jack",
+    score: "1",
+  },
+  {
+    name: "Jenny",
+    score: "2",
+  },
+  {
+    name: "James",
+    score: "4",
+  },
+  {
+    name: "Jade",
+    score: "6",
+  },
+  {
+    name: "Jasper",
+    score: "8",
+  },
+  {
+    name: "Julia",
+    score: "9",
+  },
+];
