@@ -1,0 +1,9 @@
+@mixin alert-text ($bgcolor: #555, $border: 1px solid black) {
+  color: white;
+  font-variant: small-caps;
+  padding: .5rem;
+  width: fit-content;
+  border: $border;
+  background-color: $bgcolor;
+  @content;
+}

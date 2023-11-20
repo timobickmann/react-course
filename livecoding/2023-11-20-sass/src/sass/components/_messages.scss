@@ -1,0 +1,17 @@
+.error-text {
+  @include alert-text(tomato);
+}
+
+.info-text {
+  @include alert-text(lightblue, 2px dashed black);
+}
+
+.normal-text {
+  @include alert-text(gray, null);
+}
+
+.faded-text {
+  @include alert-text() {
+    opacity: .5;
+  }
+}
